@@ -1,4 +1,5 @@
 public class Main extends queue{
+
     public static void main(String args[]){
         queue q = new queue();
         q.enQueue(1);
