@@ -1,3 +1,2 @@
 public class hashTable {
-    private
 }
