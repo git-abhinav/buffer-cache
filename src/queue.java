@@ -1,6 +1,8 @@
 public class queue extends node{
+
     node head;
     node tail;
+
     public queue(){
         head = tail = null;
     }
@@ -29,6 +31,7 @@ public class queue extends node{
             tail = newNode;
         }
     }
+
     public void showQueue(){
         if(isQueueEmpty() == true) {
             System.out.println("Queue Empty");
@@ -42,6 +45,7 @@ public class queue extends node{
         }
         System.out.println("");
     }
+
     private int countElementInQueue(){
         int count = 0;
         if(isQueueEmpty()==false){
@@ -53,6 +57,7 @@ public class queue extends node{
         }
         return count;
     }
+
     public int deQueue(){
         int value=-1;
         if(isQueueEmpty()==true){

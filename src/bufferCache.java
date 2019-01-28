@@ -1,13 +1,20 @@
 public class bufferCache {
+
     private queue lists[];
     private int bufferCacheSize;
+    private queue freeBuffer;
+
     public bufferCache() {
         lists = new queue[5];
         bufferCacheSize = 4;
+        // do something with free buffers initially.
+
     }
+
     private int getHashValue(int blockNumber){
         return (blockNumber % bufferCacheSize);
     }
+
     public void insertInCache(int blockNumber, char data){
         // which queue
         lists[getHashValue(blockNumber)].enQueue(data);
