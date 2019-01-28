@@ -8,8 +8,9 @@ public class bufferCache {
     private int getHashValue(int blockNumber){
         return (blockNumber % bufferCacheSize);
     }
-    public void insertInCache(int blockNumber){
-        
+    public void insertInCache(int blockNumber, char data){
+        // which queue
+        lists[getHashValue(blockNumber)].enQueue(data);
     }
 
 }
