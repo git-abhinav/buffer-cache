@@ -43,7 +43,4 @@ public class node {
     public node getPrevious(){
         return this.previous;
     }
-
-
-
 }
