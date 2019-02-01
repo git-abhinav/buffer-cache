@@ -8,11 +8,14 @@ public class Main extends queue{
 //        System.out.println(q.deQueue());
 //        System.out.println(q.deQueue());
 //        System.out.println(q.deQueue());
-        list l = new list();
-        byte b = 7;
-        l.insertInFreeList(b);
-        b = 8;
-        l.insertInFreeList(b);
-        l.printFreeList();
+//        list l = new list();
+//        byte b = 7;
+//        l.insertInFreeList(b);
+//        b = 8;
+//        l.insertInFreeList(b);
+//        l.printFreeList();
+
+        bufferCache b = new bufferCache();
+
     }
 }

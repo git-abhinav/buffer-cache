@@ -1,15 +1,21 @@
 public class bufferCache {
 
-    private queue lists[];
+    private hashTable hashTableNodes;
     private int bufferCacheSize;
-    private queue freeBuffer;
+    private freeList freeListNoes;
 
     public bufferCache() {
         lists = new queue[5];
         bufferCacheSize = 4;
         // do something with free buffers initially.
-
     }
+
+    public void initializeFreeList(){
+        
+    }
+
+
+
 
     private int getHashValue(int blockNumber){
         return (blockNumber % bufferCacheSize);

@@ -8,6 +8,9 @@ public class bufferNode {
     //status bits are to be added soon
     //
     private byte dataBlock;
+    public bufferNode getReference(){
+        return this;
+    }
     public bufferNode(byte dataBlock){
         this.freeNext = null;
         this.freePrevious = null;

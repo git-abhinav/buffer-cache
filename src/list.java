@@ -7,7 +7,7 @@ public class list {
     }
     public void insertInFreeList(byte data){
         // IN LRU manner
-        bufferNode newNode = new bufferNode(data);
+        bufferNode newNode  = new bufferNode(data);
         if(head == null && tail == null) {
             tail = head = newNode;
             head.setFreeNext(head);
